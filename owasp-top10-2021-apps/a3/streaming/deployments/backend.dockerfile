@@ -6,7 +6,7 @@ COPY app/backend/pom.xml /home/app
 
 RUN mvn -f /home/app/pom.xml install -U -Dmaven.test.skip=true
 
-FROM openjdk:8-jdk-alpine
+FROM openjdk:20-ea-34-jdk-slim
 
 RUN apk add --update netcat-openbsd && rm -rf /var/cache/apk/*
 
