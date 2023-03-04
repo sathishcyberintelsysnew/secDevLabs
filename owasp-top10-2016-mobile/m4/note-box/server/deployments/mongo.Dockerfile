@@ -1,3 +1,3 @@
-FROM mongo:4.0
+FROM mongo:latest
 
 ADD deployments/mongo-init.js /docker-entrypoint-initdb.d/
