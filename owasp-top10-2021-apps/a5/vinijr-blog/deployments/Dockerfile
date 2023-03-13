@@ -1,4 +1,4 @@
-FROM php:8-fpm
+FROM php:8.2-rc-zts-buster
 
 COPY deployments/apache.conf /etc/apache2/sites-available/000-default.conf
 COPY deployments/php.ini /usr/local/etc/php/
