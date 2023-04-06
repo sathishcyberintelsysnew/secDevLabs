@@ -1,4 +1,4 @@
-FROM golang:1.20.1-buster
+FROM golang:1.20.2-buster
 
 WORKDIR /go/src/github.com/globocom/secDevLabs/owasp-top10-2021-apps/a7/insecure-go-project/app
 
